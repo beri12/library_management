@@ -245,3 +245,12 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+web_authentication = True
+
+scheduler_events = {
+    "daily": [
+        "library_app.tasks.send_overdue_reminders"
+    ]
+}
+
+

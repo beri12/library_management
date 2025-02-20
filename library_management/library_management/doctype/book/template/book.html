@@ -1,0 +1,39 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+
+
+![{{ title }}]({{ image }})
+
+
+{{ title }}
+===========
+
+
+By {{ author }}
+
+
+
+
+ {%- if status == 'Available' -%}
+
+ Available
+ {%- elif status == 'Issued' -%}
+
+ Issued
+
+ {%- endif -%}
+
+
+
+Publisher: **{{ publisher }}**
+ISBN: **{{ isbn }}**
+
+{{ description }}
+
+
+
+
+
+{% endblock %}
